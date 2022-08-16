@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  font-size: 30px;
 }
 
 .background {
@@ -12,10 +14,37 @@
 }
 .background .calculator .input-box {
   background-color: brown;
+  color: white;
   width: 100vw;
   height: 25vh;
 }
 .background .calculator .buttons {
   width: 100vw;
   height: 75vh;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.background .calculator .buttons__item {
+  background-color: #333333;
+  color: white;
+  border-radius: 50%;
+}
+.background .calculator .buttons__item--topthree {
+  background-color: #b5b5b5;
+  color: black;
+}
+.background .calculator .buttons__item--rhs {
+  background-color: orange;
+}
+.background .calculator .buttons #bottom-left {
+  width: 200%;
+}
+.background .calculator .buttons #bottom-middle {
+  margin-right: -100%;
+  margin-left: 100%;
+}
+.background .calculator .buttons #bottom-right {
+  margin-right: -100%;
+  margin-left: 100%;
 }
