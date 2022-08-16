@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$primary-color: white;
+$secondary-color: black;
+
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+    border: 3px solid black;
+    background-color: black;
+
+    .calculator {
+
+
+        .input-box {
+            background-color: brown;
+            width: 100vw;
+            height: 25vh;
+        }
+    
+        .buttons {
+            width: 100vw;
+            height: 75vh;
+        }
+
+    }
+
+
+}
