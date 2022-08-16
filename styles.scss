@@ -15,18 +15,26 @@ $rhs-color: orange;
     width: 100vw;
     height: 100vh;
     display: flex;
-    
-    border: 3px solid black;
+
     background-color: black;
 
     .calculator {
 
 
-        .input-box {
-            background-color: brown;
-            color: $primary-color;
-            width: 100vw;
-            height: 25vh;
+        .input-area {
+
+            &__box {
+
+                width: 100vw;
+                height: 25vh;
+                text-align: right;
+
+                background-color: $secondary-color;
+                color: $primary-color;
+                font-size: 50px;
+
+            }
+
         }
     
         .buttons {
