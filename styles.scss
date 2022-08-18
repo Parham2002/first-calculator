@@ -14,66 +14,63 @@ $rhs-color: orange;
 .background {
     width: 100vw;
     height: 100vh;
-    display: flex;
-
     background-color: black;
 
-    .calculator {
+}
+
+.calculator {
 
 
-        .input-area {
+    .input-area {
 
-            &__box {
+        &__box {
 
-                width: 100vw;
-                height: 25vh;
-                text-align: right;
-
-                background-color: $secondary-color;
-                color: $primary-color;
-                font-size: 50px;
-
-            }
-
-        }
-    
-        .buttons {
             width: 100vw;
-            height: 75vh;
+            height: 25vh;
+            text-align: right;
 
-            display: grid;
-            grid-template-columns: 25% 25% 25% 25%;
-            grid-template-rows: 20% 20% 20% 20% 20%;
-
-            &__item {
-                background-color: $button-numbers-color;
-                color: $primary-color;
-                border-radius: 50%;
-
-                &--topthree {
-                    background-color: rgb(181, 181, 181);
-                    color: $secondary-color;
-                }
-                &--rhs {
-                    background-color: $rhs-color;
-                }
-            }
-            #bottom-left {
-                width: 200%;
-            }
-            #bottom-middle {
-                margin-right: -100%;
-                margin-left: 100%;
-            }
-            #bottom-right {
-                margin-right: -100%;
-                margin-left: 100%
-                
-            }
+            background-color: $secondary-color;
+            color: $primary-color;
+            font-size: 50px;
 
         }
 
     }
+    
+    .buttons {
+        width: 100vw;
+        height: 75vh;
 
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+
+        &__item {
+            background-color: $button-numbers-color;
+            color: $primary-color;
+            border-radius: 50%;
+
+            &--topthree {
+                background-color: rgb(181, 181, 181);
+                color: $secondary-color;
+            }
+            &--rhs {
+                background-color: $rhs-color;
+            }
+        }
+        #bottom-left {
+            width: 200%;
+        }
+        #bottom-middle {
+            margin-right: -100%;
+            margin-left: 100%;
+        }
+        #bottom-right {
+            margin-right: -100%;
+            margin-left: 100%
+                
+        }
+
+    }
 
 }

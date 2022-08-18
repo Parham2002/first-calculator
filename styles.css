@@ -8,43 +8,44 @@
 .background {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  border: 3px solid black;
   background-color: black;
 }
-.background .calculator .input-box {
-  background-color: brown;
-  color: white;
+
+.calculator .input-area__box {
   width: 100vw;
   height: 25vh;
+  text-align: right;
+  background-color: black;
+  color: white;
+  font-size: 50px;
 }
-.background .calculator .buttons {
+.calculator .buttons {
   width: 100vw;
   height: 75vh;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 20% 20% 20% 20% 20%;
 }
-.background .calculator .buttons__item {
+.calculator .buttons__item {
   background-color: #333333;
   color: white;
   border-radius: 50%;
 }
-.background .calculator .buttons__item--topthree {
+.calculator .buttons__item--topthree {
   background-color: #b5b5b5;
   color: black;
 }
-.background .calculator .buttons__item--rhs {
+.calculator .buttons__item--rhs {
   background-color: orange;
 }
-.background .calculator .buttons #bottom-left {
+.calculator .buttons #bottom-left {
   width: 200%;
 }
-.background .calculator .buttons #bottom-middle {
+.calculator .buttons #bottom-middle {
   margin-right: -100%;
   margin-left: 100%;
 }
-.background .calculator .buttons #bottom-right {
+.calculator .buttons #bottom-right {
   margin-right: -100%;
   margin-left: 100%;
 }

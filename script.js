@@ -1,24 +1,12 @@
-const calculator = (numOne, operator, numTwo) => {
-    numOne = parseFloat(numOne)
-    numTwo = parseFloat(numTwo)
-    
-    switch(operator) {
-        case ("+"):
-            return numOne + numTwo;
-            break;
-        case ("-"):
-            return numOne - numTwo;
-            break;
-        case ("*"):
-            return numOne * numTwo;
-            break;
-        case ("/"):
-            return numOne / numTwo
-            break;
-    }
+// i.e. input [3, +, 6, 32, -, 22]
+
+const numberOne = document.querySelector(".buttons__item")
+
+let inputArea = document.querySelector("input-area__box")
+
+const calculator = (input) => {
+    inputArea += input
+    console.log(inputArea)
+
 }
 
-console.log(calculator("5.5", "+", "5"))
-console.log(calculator("5.5", "-", "5"))
-console.log(calculator("5.5", "*", "5"))
-console.log(calculator("5.5", "/", "5"))
