@@ -12,8 +12,8 @@ $rhs-color: orange;
 
 
 .background {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: black;
 
 }
@@ -24,9 +24,11 @@ $rhs-color: orange;
     .input-area {
 
         &__box {
-
-            width: 100vw;
-            height: 25vh;
+            max-width: 550px;
+            min-width: 200px;
+            min-height: 150px;
+            width: 100%;
+            height: 25%;
             text-align: right;
 
             background-color: $secondary-color;
@@ -38,8 +40,11 @@ $rhs-color: orange;
     }
     
     .buttons {
-        width: 100vw;
-        height: 75vh;
+        max-width: 550px;
+        min-width: 200px;
+        min-height: 200px;
+        width: 100%;
+        height: 75%;
 
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
@@ -73,4 +78,17 @@ $rhs-color: orange;
 
     }
 
+}
+
+@media only screen and (min-width = 550px) {
+    .calculator {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .background {
+        background-color: red !important;
+    }
 }

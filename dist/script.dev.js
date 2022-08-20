@@ -1,36 +1,25 @@
 "use strict";
 
 var inputArea = document.querySelector(".input-area__box");
-var buttons = document.querySelectorAll(".buttons__item"); // buttons.addEventListener("click", (event) => {
-//     inputArea.innerHTML += `${event.answer.value}`
-// })
-// 123 + 123
+var buttons = Array.from(document.querySelectorAll(".buttons__item"));
 
-var calculate = function calculate(total) {
-  var lst = [];
-
-  for (i = 0; i < total.length; i++) {
-    if (total[i] != " ") {
-      lst.push(total[i]);
-      console.log(lst);
-    }
-  }
-
-  var answer = lst.join("");
-  console.log(answer);
-  return answer;
+var calculator = function calculator(values) {
+  return new Function("return " + values)();
 };
 
-buttons.forEach(function (button) {
-  button.addEventListener("click", function () {
-    if (button.value == " = ") {
-      inputArea.value = calculate(inputArea.value);
-    } else if (button.value == "AC") {
-      inputArea.value = "";
-    } else {
-      inputArea.value += button.value;
-    }
+buttons.map(function (button) {
+  button.addEventListener("click", function (ans) {
+    switch (ans.target.innerText) {
+      case "AC":
+        inputArea.value = "";
+        break;
 
-    console.log(inputArea.value);
+      case "=":
+        inputArea.value = calculator(inputArea.value);
+        break;
+
+      default:
+        inputArea.value += ans.target.innerText;
+    }
   });
 });
