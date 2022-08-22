@@ -6,7 +6,7 @@ let buttons = Array.from(document.querySelectorAll(".buttons__item"))
 
 // Using a function constructor since usage of eval()
 // is not recommended for calculations
-const calculator = (values) => {
+const Calculator = (values) => {
     return new Function("return " + values)();
 }
 
@@ -20,7 +20,7 @@ buttons.map( button => {
                inputArea.value= "";
                break;
             case "=":
-                inputArea.value = calculator(inputArea.value);
+                inputArea.value = Calculator(inputArea.value);
                 break;
             default:
                 inputArea.value += ans.target.innerText;

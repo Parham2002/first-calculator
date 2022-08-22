@@ -6,7 +6,7 @@ var inputArea = document.querySelector(".input-area__box");
 var buttons = Array.from(document.querySelectorAll(".buttons__item")); // Using a function constructor since usage of eval()
 // is not recommended for calculations
 
-var calculator = function calculator(values) {
+var Calculator = function Calculator(values) {
   return new Function("return " + values)();
 }; // Using .map iterator to make a new array out of buttons array
 
@@ -21,7 +21,7 @@ buttons.map(function (button) {
         break;
 
       case "=":
-        inputArea.value = calculator(inputArea.value);
+        inputArea.value = Calculator(inputArea.value);
         break;
 
       default:
