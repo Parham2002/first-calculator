@@ -24,6 +24,10 @@ buttons.map(function (button) {
         inputArea.value = Calculator(inputArea.value);
         break;
 
+      case "%":
+        inputArea.value += "/100";
+        break;
+
       default:
         inputArea.value += ans.target.innerText;
         break;

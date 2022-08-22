@@ -14,7 +14,6 @@
 .calculator .input-area__box {
   max-width: 550px;
   min-width: 200px;
-  min-height: 200px;
   width: 100%;
   height: 25%;
   text-align: right;
@@ -25,7 +24,6 @@
 .calculator .buttons {
   max-width: 550px;
   min-width: 200px;
-  min-height: 400px;
   width: 100%;
   height: 75%;
   display: grid;
@@ -61,13 +59,16 @@
     max-width: 550px;
     display: flex;
     flex-direction: column;
-    margin-left: 32.5%;
-    margin-top: 50px;
+    margin: 10vh 15vw 0 32.5vw;
     border: 20px solid #360f0f;
     border-radius: 10px;
   }
+  .calculator .input-area__box {
+    height: 175px;
+  }
   .calculator .buttons {
     background-color: black;
+    height: 400px;
   }
 
   .background {
